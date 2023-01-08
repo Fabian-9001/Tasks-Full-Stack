@@ -4,14 +4,17 @@ import '../components/login/styles/login.css'
 
 const Login = () => {
     return (
-        <div className='login_section'>
-            <div className='login_container'>
-                <h1>Welcome back</h1>
-                <p>Enter your details for entrie</p>
-                <Form />
+        <div className='login__section'>
+            <div className='login__container'>
+                <h1 className='login__title'>Welcome back</h1>
+                <p className='login__subTitle'>Enter your details for entrie</p>
+
+                <div className='login__container__form'>
+                    <Form />
+                </div>
             </div>
-            <div className='login_container'>
-                <img className='login_img' src="https://i.pinimg.com/736x/f0/cf/3c/f0cf3ca5520b735df72753235ad4af57.jpg" alt="" />
+            <div className='login__container'>
+                <img className='login__img' src="/img/me.png" alt="" />
             </div>
         </div>
     )
